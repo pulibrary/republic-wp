@@ -1,0 +1,149 @@
+/*
+Theme Name: Twentyeleven Child
+Description: Child theme for the twentyeleven theme 
+Author: Anna
+Template: twentyeleven
+*/
+
+@import url("../twentyeleven/style.css");
+
+body, input, textarea {
+	font: 16.4px "Baskerville Old Face", Baskerville, Palatino Linotype, Garamond, serif;
+	line-height: 1.725;
+}
+
+/* change background color of page itself, that the text is written on */
+#page {
+	background: #EBEADF;
+}
+
+/* Links */
+a:focus,
+a:active,
+a:hover {
+	text-decoration: none;
+}
+
+#branding {
+	background: black; 
+}
+
+
+#site-title {
+	margin-right: 0px;
+	padding: 2.65625em 0 0;
+	text-align: center
+}
+
+#site-title a {
+	color: #9abbd6;
+	font-size: 48px;
+	font-weight: bold;
+	line-height: 36px;
+	text-decoration: none;
+	width: 100%;
+	
+}
+#site-title a:hover,
+#site-title a:focus,
+#site-title a:active {
+	color: #1982d1;
+}
+#site-description {
+	color: #7a7a7a;
+	font-size: 23px;
+	width: 100%;
+	text-align: center;
+	margin: 0 270px 2em 0;
+}
+
+#branding img {
+	height: auto;
+	margin-bottom: -7px;
+	width: 100%;
+}
+
+/* removes white line above custom header */
+#branding {
+border-top: none;
+}
+
+#branding #searchform {
+	display: none;
+}
+
+/* change background of nav bar when you hover over a menu item */
+#access li:hover > a, #access ul ul:hover > a, #access a:focus {
+background: #EBEADF!important;
+}
+
+
+/* change background and font color of text in nav bar */
+#access ul ul a {
+background: #222;
+color: #EBEADF;
+text-align:left;
+}
+
+/*center navigation menu. Note, this also centers all dropdowns unless you text-align left, as above */
+#access { text-align:center; }
+#access ul { display:inline-block; }
+#access div {
+	margin: 0 0 0 0;
+}
+
+.entry-title {
+	padding-bottom: 0em;
+}
+
+.subtitle {
+	font-variant: small-caps;
+}
+
+.single-author .entry-meta .by-author {
+	display: none;
+}
+
+.entry-content,
+.entry-summary {
+	padding: 0em 0 0;
+}
+
+.entry-header .comments-link .leave-reply {
+	visibility: hidden;
+}
+	
+/* the line below puts extra space above the title of each excerpt */
+h2 {
+	padding-top: 50px;
+	}
+
+/* the line below removes author, date, category and tag info from posts; currently commented out */
+/* .entry-meta {display:none;} */
+ 
+/* the three lines below remove time, author and date from posts */ 
+.sep {display: none;}
+.author vcard {display: none;}
+.entry-date {display: none;}
+
+/* the line below removes "comments are closed" from posts */
+.nocomments{display:none;}
+
+.singular .entry-title {
+	font-size: 30px;
+	line-height: 40px;
+}
+
+  
+/* the line below reduces the amount of space between page content and nav bar */
+
+.singular .hentry, .singular.page .hentry {
+    padding: 2px;
+}
+
+footer.entry-meta .cat-links {display: none;}
+
+/* code below removes Proudly powered by Wordpress or whatever is in your footer; currently commented out because I have changed it in footer.php
+#site-generator {
+display:none; */
+}
