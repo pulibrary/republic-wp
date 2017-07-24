@@ -5,7 +5,7 @@ Author: Anna
 Template: twentyeleven
 */
 
-@import url("../twentyeleven/style.css");
+@import url("/wp-content/themes/twentyeleven/style.css");
 
 body, input, textarea {
 	font: 16.4px "Baskerville Old Face", Baskerville, Palatino Linotype, Garamond, serif;
